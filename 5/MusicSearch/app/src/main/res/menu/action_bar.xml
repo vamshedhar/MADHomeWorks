@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeBtn"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/sortAsc"
+        android:title="Sort ASC by Name" />
+    <item
+        android:id="@+id/sortDsc"
+        android:title="Sort Desc By Name" />
+    <item
+        android:id="@+id/quitBtn"
+        android:title="@string/quit" />
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.mysocial.activities.FriendsActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="15dp"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/welcome"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/userFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/textView"
+            android:text="@string/vamshedhar_reddy"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleWrapper"
+        android:id="@+id/friendsTabLayout"
+        android:elevation="3dp"
+        android:background="@color/white">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/friendsTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/newFriendsTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_friends" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/friendRequestsTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friend_requests" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/firendsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/friendsTabLayout"
+        android:layout_above="@+id/bottomNavigation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="5dp"
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@drawable/bottom_navigation_background"
+        app:itemIconTint="@drawable/bottom_navigation_text"
+        app:itemTextColor="@drawable/bottom_navigation_text"
+        app:menu="@menu/bottom_navigaton_menu"
+        android:elevation="8dp"/>
+
+</RelativeLayout>

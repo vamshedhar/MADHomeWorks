@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.coursemanager.LoginFragment">
+
+    <EditText
+        android:id="@+id/registerUsernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/websiteET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/registerUsernameET"
+        android:layout_alignStart="@+id/registerUsernameET"
+        android:layout_below="@+id/registerUsernameET"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/showPasswordCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/websiteET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/show_password" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showPasswordCB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:elevation="10dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/not_registered"
+        android:textSize="18sp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignStart="@+id/loginBtn" />
+
+    <TextView
+        android:id="@+id/signUpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="@string/signup"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

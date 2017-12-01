@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.coursemanager.AddInstructorFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/registerProfilePic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/profile_image" />
+
+            <EditText
+                android:id="@+id/firstNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerProfilePic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/lastNameET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/firstNameET"
+                android:layout_alignStart="@+id/firstNameET"
+                android:layout_below="@+id/firstNameET"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/lastNameET"
+                android:layout_alignStart="@+id/lastNameET"
+                android:layout_below="@+id/lastNameET"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/websiteET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/emailET"
+                android:layout_alignStart="@+id/emailET"
+                android:layout_below="@+id/emailET"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="@string/personal_website"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/websiteET"
+                android:layout_below="@+id/websiteET"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/reset"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/websiteET"
+                android:layout_below="@+id/websiteET"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/register"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

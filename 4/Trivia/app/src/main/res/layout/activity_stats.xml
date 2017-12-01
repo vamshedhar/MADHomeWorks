@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.trivia.StatsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/triviaStats"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/corectAnswers"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/tryAgainText" />
+
+    <TextView
+        android:id="@+id/percentageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:text="75%"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/correctAnswersProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/percentageText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/percentageText"
+        android:max="100"
+        android:progress="75"
+        android:progressTint="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/tryAgainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/tryAgainText"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/exitStatsBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onStatsExitClick"/>
+
+    <Button
+        android:id="@+id/tryAgainBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/exitStatsBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="@string/tryAgain"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onTryAgainClick"/>
+
+</RelativeLayout>

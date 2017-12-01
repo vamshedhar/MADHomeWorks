@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/startTextTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="...aches and "
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/keyWordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startTextTV"
+        android:layout_toEndOf="@+id/startTextTV"
+        android:text="angry"
+        android:textSize="20sp"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/endTextTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/keyWordTV"
+        android:layout_toEndOf="@+id/keyWordTV"
+        android:text=' words."Yes, it...'
+        android:textSize="20sp"
+        android:typeface="monospace"/>
+
+</RelativeLayout>

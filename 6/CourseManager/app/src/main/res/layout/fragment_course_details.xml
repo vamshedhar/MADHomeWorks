@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.coursemanager.CourseDetailsFragment">
+
+
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Algorithms and Data Structures"
+        android:textAlignment="textStart"
+        android:textSize="26sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/courseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/courseSemester"
+        android:layout_alignBottom="@+id/courseSemester"
+        android:layout_alignEnd="@+id/courseTitle"
+        android:text="Monday 6:30 PM"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/courseSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/courseTitle"
+        android:layout_below="@+id/courseTitle"
+        android:layout_marginTop="15dp"
+        android:text="Spring Semester"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/creditHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseSemester"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="3 Credit hours"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/courseSemester"
+        android:layout_below="@+id/creditHours"
+        android:layout_marginTop="23dp"
+        android:text="@string/instructor"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:id="@+id/instructorBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/instructorProfilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/profile_image" />
+
+            <TextView
+                android:id="@+id/instructorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_toEndOf="@+id/instructorProfilePic"
+                android:text="TextView"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                tools:text="Srinivas Akella" />
+
+            <TextView
+                android:id="@+id/instructorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/instructorName"
+                android:layout_below="@+id/instructorName"
+                android:layout_marginTop="12dp"
+                android:text="sakella@uncc.edu"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/instructorWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/instructorEmail"
+                android:layout_below="@+id/instructorEmail"
+                android:layout_marginTop="14dp"
+                android:text="http://www.srinivasakella.com"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

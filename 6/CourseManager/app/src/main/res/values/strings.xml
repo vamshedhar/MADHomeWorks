@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Course Manager</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="login">Login</string>
+    <string name="not_registered">Not registered ?</string>
+    <string name="signup">SignUp</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password_signup">Password (min 8 characters)</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="personal_website">Personal Website</string>
+    <string name="title">Title</string>
+    <string name="choose_instructor">Choose Instructor</string>
+    <string name="schedule">Schedule</string>
+    <string name="day">Day</string>
+    <string name="select_day">Select Day</string>
+    <string name="select_semester">Select Semester</string>
+    <string name="time">Time</string>
+    <string name="semester">Semester</string>
+    <string name="credit_hours">Credit Hours</string>
+    <string name="reset">Reset</string>
+    <string name="create">Create</string>
+    <string name="your_courses">Your Courses</string>
+    <string name="instructors">Instructors</string>
+    <string name="home">Home</string>
+    <string name="add_instructor">Add Instructor</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="no_instructor_msg">You haven’t added any instructor yet, please add at least one instructor to continue.</string>
+    <string name="create_instructor">Create Instructors</string>
+    <string-array name="weekdays">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string-array name="time">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="semesters">
+        <item>Fall</item>
+        <item>Spring</item>
+        <item>Summer</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instructor">Instructor</string>
+    <string name="instructor_courses">Instructor\'s Courses</string>
+    <string name="no_courses">No courses added for the instructor!</string>
+    <string name="add_course">Add Course?</string>
+</resources>

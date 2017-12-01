@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.searchwords.MainActivity">
+
+    <TextView
+        android:id="@+id/mainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/mainTitle"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainLabel"
+        android:layout_above="@+id/matchCases"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/keyWordList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/addItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/newKeyWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/newKeyWord"
+                    android:inputType="textPersonName" />
+
+                <ImageView
+                    android:id="@+id/imageButton"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.07"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/add"
+                    android:onClick="addKeyWord"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <CheckBox
+        android:id="@+id/matchCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="@string/matchCases" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/search"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/searchProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="22dp"
+        android:max="100"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:progress="10"
+        android:visibility="gone" />
+
+</RelativeLayout>

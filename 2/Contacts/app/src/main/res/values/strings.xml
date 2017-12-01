@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="createNewText">Create New</string>
+    <string name="editContact">Edit Contact</string>
+    <string name="deleteContact">Delete Contact</string>
+    <string name="displayContact">Display Contact</string>
+    <string name="finish">Finish</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
+    <string name="company">Company</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="url">URL</string>
+    <string name="address">Address</string>
+    <string name="date">Date</string>
+    <string name="nickName">Nick Name</string>
+    <string name="fbURL">Facebook Profile URL</string>
+    <string name="twitterURL">Twitter Profile URL</string>
+    <string name="skype">Skype</string>
+    <string name="youTube">YouTube Channel</string>
+    <string name="save">Save</string>
+    <string name="birthday">Birthday</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="youtube">YouTube</string>
+</resources>

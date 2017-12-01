@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="mainTitle">Welcome to Trivia App</string>
+    <string name="exit">Quit</string>
+    <string name="startTrivia">Start Trivia</string>
+    <string name="loadingTrivia">Loading Trivia</string>
+    <string name="triviaReady">Trivia Ready</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="triviaStats">Trivia Stats</string>
+    <string name="corectAnswers">Correct Answers</string>
+    <string name="tryAgainText">Try again and see if you can get all the correct answers!</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="noNetwork">No Network Connection!</string>
+</resources>

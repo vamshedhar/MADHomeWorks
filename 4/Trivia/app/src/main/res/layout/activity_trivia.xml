@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.trivia.TriviaActivity">
+
+    <TextView
+        android:id="@+id/questionNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/bgColor"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="Q1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/questionNoText"
+        android:layout_marginEnd="15dp"
+        android:text="Time Left: 120 seconds"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:background="@color/bgColor"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/timerText"
+        android:layout_marginTop="19dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/questionNoText"
+        android:layout_below="@+id/questionImage"
+        android:layout_marginTop="15dp"
+        android:text="Question text goes here.."
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/imageLoder"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/questionImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/exitTriviaBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onTriviaExitClick"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/exitTriviaBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onNextClick"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/questionText"
+        android:layout_above="@id/exitTriviaBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioGroup
+            android:id="@+id/choicesGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="RadioButton"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </ScrollView>
+
+</RelativeLayout>

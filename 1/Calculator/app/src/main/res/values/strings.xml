@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="buttonACText">AC</string>
+    <string name="buttonSignChangeText">+/-</string>
+    <string name="buttonPercentText">%</string>
+    <string name="buttonDivideText">/</string>
+    <string name="button7Text">7</string>
+    <string name="button8Text">8</string>
+    <string name="button9Text">9</string>
+    <string name="buttonMultiplyText">x</string>
+    <string name="button4Text">4</string>
+    <string name="button5Text">5</string>
+    <string name="button6Text">6</string>
+    <string name="button1Text">1</string>
+    <string name="button2Text">2</string>
+    <string name="button3Text">3</string>
+    <string name="buttonMinusText">-</string>
+    <string name="buttonPlusText">+</string>
+    <string name="button0Text">0</string>
+    <string name="buttonDotText">.</string>
+    <string name="buttonEqualsText">=</string>
+</resources>

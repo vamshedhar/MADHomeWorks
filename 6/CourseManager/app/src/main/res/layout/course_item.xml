@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="?android:attr/selectableItemBackground">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/coruserImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/profile_image" />
+
+            <TextView
+                android:id="@+id/courseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/coruserImage"
+                android:text="Algorithms and Data Structors"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/courseInstructor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/courseTitle"
+                android:layout_below="@+id/courseTitle"
+                android:layout_marginTop="10dp"
+                android:text="Srinivas Akella"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/courseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/courseInstructor"
+                android:layout_below="@+id/courseInstructor"
+                android:layout_marginTop="10dp"
+                android:text="Wed 06:35 PM"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

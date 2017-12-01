@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.vamshedhar.contacts.MainActivity"
+    android:padding="30dp">
+
+    <Button
+        android:id="@+id/createNewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:onClick="onCreateContactClick"
+        android:text="@string/createNewText"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/editContactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/createNewBtn"
+        android:layout_marginTop="20dp"
+        android:text="@string/editContact"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="onEditContactClick"/>
+
+    <Button
+        android:id="@+id/deleteContactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editContactBtn"
+        android:layout_marginTop="20dp"
+        android:text="@string/deleteContact"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="onDeleteContactClick"/>
+
+    <Button
+        android:id="@+id/displayContactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/deleteContactBtn"
+        android:layout_marginTop="20dp"
+        android:text="@string/displayContact"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="onDisplayContactClick"/>
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/displayContactBtn"
+        android:layout_marginTop="20dp"
+        android:text="@string/finish"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="close"/>
+</RelativeLayout>
